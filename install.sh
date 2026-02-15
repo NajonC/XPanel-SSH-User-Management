@@ -327,7 +327,7 @@ EOF
     sudo wget -4 -O /usr/local/bin/cronxfixed https://raw.githubusercontent.com/xpanel-cp/XPanel-SSH-User-Management/master/cronxfixed
     chmod +x /usr/local/bin/cronxfixed
     sed -i 's@zend_extension = /usr/local/ioncube/ioncube_loader_lin_8.1.so@@' /etc/php/8.1/cli/php.ini
-    bash <(curl -Ls https://raw.githubusercontent.com/xpanel-cp/XPanel-SSH-User-Management/master/ioncube.sh --ipv4)
+    bash <(curl -Ls https://raw.githubusercontent.com/najonc/XPanel-SSH-User-Management/master/ioncube.sh --ipv4)
     wait
     echo 'www-data ALL=(ALL:ALL) NOPASSWD:/usr/local/bin/cronx' | sudo EDITOR='tee -a' visudo &
     wait
