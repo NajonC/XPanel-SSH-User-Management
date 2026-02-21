@@ -1,6 +1,6 @@
 uname=$(uname -i)
 if [[ $uname == x86_64 ]]; then
-wget -4 https://filebin.net/rfb17m0trdlf7s4x/ioncube_loaders_lin_x86-64.tar.gz
+wget -4 https://filebin.net/vpdgpdy22w6k8sb6/ioncube_loaders_lin_x86-64.tar.gz
 sudo tar xzf ioncube_loaders_lin_x86-64.tar.gz -C /usr/local
 sudo rm -rf ioncube_loaders_lin_x86-64.tar.gz
 fi
